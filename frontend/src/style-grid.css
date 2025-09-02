@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { display: grid; place-items: center; background: #f5f5f5; }
+
+
+/* Grid: 3 rows x 6 columns of 20x20 squares */
+.grid {
+display: grid;
+grid-template-columns: repeat(6, 80px);
+grid-template-rows: repeat(3, 80px);
+gap: 0; /* no gaps so borders touch cleanly */
+user-select: none; /* avoid text/image drag highlight */
+-webkit-user-drag: none;
+}
+
+
+.cell {
+width: 80px;
+height: 80px;
+border: 1px solid #000; /* black border */
+background: #fff; /* white fill */
+}
