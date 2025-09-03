@@ -1,6 +1,8 @@
 module white-witch
 
-go 1.23
+go 1.24.0
+
+toolchain go1.24.2
 
 require github.com/wailsapp/wails/v2 v2.10.2
 
